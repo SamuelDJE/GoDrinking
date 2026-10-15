@@ -2,6 +2,7 @@ import { View, Text, Image } from "react-native"
 import Logo from '../../assets/images/logo.png'
 import { OurOffers } from "../../components/OurOffers"
 import { styles } from "./style"
+import { AvailableSize } from "../../components/AvailableSize"
 
 export const HomeScreen = () => {
 
@@ -11,6 +12,7 @@ export const HomeScreen = () => {
         <View style={styles.containerHomeScreen}>
             <Image source={Logo} style={styles.logoHome} />
             <OurOffers />
+            <AvailableSize/>
         </View>
     )
 }
