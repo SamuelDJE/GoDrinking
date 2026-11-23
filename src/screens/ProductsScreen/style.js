@@ -26,6 +26,9 @@ export const styles = StyleSheet.create({
         gap: 10,
         alignItems: "center"
     },
+    searhInput:{
+        
+    },
     ourProducts:{
         gap:20
     },

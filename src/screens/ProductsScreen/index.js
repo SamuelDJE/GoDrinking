@@ -8,7 +8,7 @@ import latinhaCard from  "../../assets/images/LatinhaCard.png"
 export const ProductsScreen = () => {
     return (
         <View style={styles.containerHomeScreen}>
-            <Image source={Logo} style={styles.logoHome} />
+            <Image source={Logo} style={styles.imgLogo} />
             <View style={styles.containerInput}>
                 <TextInput />
                 <Image source={Filtro} />

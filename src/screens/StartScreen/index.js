@@ -12,16 +12,16 @@ export const StartScreen = () => {
     useFonts({
         Oswald: require("../../assets/fonts/Oswald-VariableFont_wght.ttf")
     })
+    
 
-    const Navigation = useNavigation()
+    const navigation = useNavigation()
+
     return (
         <View style={styles.containerStartScreen}>
             <Image source={Logo} />
             <Text style={styles.textWelCome}>Seu app para comprar energéticos de forma rápida, prática e segura. Encontre suas marcas favoritas e receba onde estiver.</Text>
-            <Pressable onPress={() => Navigation.navigate("home")}>
-                <Text style={styles.teste}> CLIQUE AQUI</Text>
-            </Pressable>
-            <ButtonPrimary title="Entrar" />
+            
+            <ButtonPrimary title="Entrar" onPress={() => navigation.navigate("home")} />
             <ButtonOutline title="Cadastrar" />
         </View>
     )

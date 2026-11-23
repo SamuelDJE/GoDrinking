@@ -7,12 +7,13 @@ import { OurHighlights } from "../../components/OurHighlights"
 
 export const HomeScreen = () => {
 
+    
 
 
     return (
         <ScrollView contentContainerStyle={styles.containerHomeScreen}>
             <Image source={Logo} style={styles.logoHome} />
-            <OurOffers />
+            <OurOffers/>
             <AvailableSize/>
             <OurHighlights/>
         </ScrollView>
